@@ -64,7 +64,7 @@
                                         <td><?php echo $buku['judul_buku']?></td>
                                         <td><?php echo $buku['penulis'];?></td>
                                         <td><?php echo $buku['kategori'];?></td>
-                                        <td><?php echo 'Rp'.number_format($buku['harga']);?></td>
+                                        <td><?php echo 'Rp '.number_format($buku['harga']);?></td>
                                         <td style="text-align: center;">
                                             <a href="edit.php?id=<?php echo $buku['id'];?>" class="btn btn-success btn-md">
                                             <span class="fa fa-edit"></span></a>

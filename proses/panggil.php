@@ -9,7 +9,7 @@
     // panggil class prosesCrud di file prosescrud.php
     $proses = new prosesCrud($koneksi);
     // menghilangkan pesan error
-    error_reporting(0);
+    error_reporting(1);
     // panggil session ID
     $id = $_SESSION['ADMIN']['id_login'];
     $sesi = $proses->tampil_data_id('tbl_user','id_login',$id);
