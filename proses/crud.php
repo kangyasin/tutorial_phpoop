@@ -106,7 +106,7 @@
         $harga = strip_tags($_POST['harga']);
         $kategori = strip_tags($_POST['kategori']);
 
-        $tabel = 'master_buku';
+        $tabel = 'tbl_buku';
         # proses insert
         $data[] = array(
             'judul_buku'		=>$judul_buku,
@@ -131,7 +131,7 @@
               'harga'		=>$harga,
               'kategori'			=>$kategori
           );
-          $tabel = 'master_buku';
+          $tabel = 'tbl_buku';
           $where = 'id';
           $id = strip_tags($_POST['id']);
           $proses->edit_data($tabel,$data,$where,$id);
@@ -140,7 +140,7 @@
 
       if(!empty($_GET['aksi'] == 'hapus_buku'))
       {
-          $tabel = 'master_buku';
+          $tabel = 'tbl_buku';
           $where = 'id';
           $id = strip_tags($_GET['hapusid']);
           $proses->hapus_data($tabel,$where,$id);

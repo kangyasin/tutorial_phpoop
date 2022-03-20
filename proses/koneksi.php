@@ -2,7 +2,7 @@
     class Koneksi{
         public function DBConnect(){
 			$dbhost = 'localhost'; // set the hostname
-			$dbname = 'tutorial_phpoop'; // set the database name
+			$dbname = 'bnsp_buku'; // set the database name
 			$dbuser = 'root'; // set the mysql username
             $dbpass = '';  // set the mysql password
 

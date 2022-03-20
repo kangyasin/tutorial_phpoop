@@ -56,7 +56,7 @@
                                 <tbody>
                                 <?php
                                     $no=1;
-                                    $hasil = $proses->tampil_data('master_buku');
+                                    $hasil = $proses->tampil_data('tbl_buku');
                                     foreach($hasil as $buku){
                                 ?>
                                     <tr>
@@ -67,9 +67,9 @@
                                         <td><?php echo 'Rp '.number_format($buku['harga']);?></td>
                                         <td style="text-align: center;">
                                             <a href="edit.php?id=<?php echo $buku['id'];?>" class="btn btn-success btn-md">
-                                            <span class="fa fa-edit"></span></a>
+                                            <span class="fa fa-edit"></span>Edit</a>
                                             <a onclick="return confirm('Apakah yakin data akan di hapus?')" href="../proses/crud.php?aksi=hapus_buku&hapusid=<?php echo $buku['id'];?>"
-                                            class="btn btn-danger btn-md"><span class="fa fa-trash"></span></a>
+                                            class="btn btn-danger btn-md"><span class="fa fa-trash"></span>Delete</a>
                                         </td>
                                     </tr>
                                 <?php

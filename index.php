@@ -72,9 +72,9 @@
                                         <td>****</td>
                                         <td style="text-align: center;">
                                             <a href="edit.php?id=<?php echo $isi['id_login'];?>" class="btn btn-success btn-md">
-                                            <span class="fa fa-edit"></span></a>
+                                            <span class="fa fa-edit"></span>Edit </a>
                                             <a onclick="return confirm('Apakah yakin data akan di hapus?')" href="proses/crud.php?aksi=hapus&hapusid=<?php echo $isi['id_login'];?>"
-                                            class="btn btn-danger btn-md"><span class="fa fa-trash"></span></a>
+                                            class="btn btn-danger btn-md"><span class="fa fa-trash"></span>Delete</a>
                                         </td>
                                     </tr>
                                 <?php

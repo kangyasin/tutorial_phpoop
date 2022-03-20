@@ -26,11 +26,13 @@
                         </div>
                     <?php }?>
                 </div>
+                <?php if(isset($_GET['get'])){?>
                 <div id="notifikasi">
                     <div class="alert alert-danger">
                         <small>Login Anda Gagal, Periksa Kembali Username dan Password</small>
                     </div>
                 </div>
+                <?php }?>
                 <div class="card">
                     <div class="card-header">
                         <h4 class="card-title"> <i class="fas fa-key"></i> Sign in</h4>
